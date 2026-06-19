@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help improve $PROJECT_NAME
+about: Create a report to help improve infinite-glyphs
 title: "[BUG] "
 labels: bug
 assignees: ''
