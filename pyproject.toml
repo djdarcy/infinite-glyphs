@@ -5,16 +5,16 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "infinite-glyphs"
 dynamic = ["version"]
-description = "A new project created from git-repokit-template"
+description = "Procedural glyphs for arbitrarily large numeral bases: deterministic cursive (plus data-matrix and cellular-automata) scripts rendered to SVG/PNG and baked into installable fonts."
 readme = "README.md"
 license = {text = "GPL-3.0-or-later"}
 requires-python = ">=3.10"
 authors = [
     {name = "djdarcy", email = "djdarcy@users.noreply.github.com"},
 ]
-keywords = []
+keywords = ["fonts", "typography", "glyphs", "fonttools", "procedural-generation", "numeral-systems", "cellular-automata", "svg"]
 classifiers = [
-    "Development Status :: 2 - Pre-Alpha",
+    "Development Status :: 3 - Alpha",
     "Environment :: Console",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
@@ -24,15 +24,24 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
-    "Topic :: Utilities",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Text Processing :: Fonts",
 ]
 
-dependencies = []
+dependencies = [
+    "Pillow>=9.0",
+    "fonttools>=4.40",
+]
 
 [project.optional-dependencies]
+# Recommended: clean, consistently-wound font contours (else glyphs may render thin).
+font = [
+    "skia-pathops>=0.7",
+]
 dev = [
     "pytest>=7.0.0",
     "pytest-cov>=4.0.0",
+    "skia-pathops>=0.7",
 ]
 
 [project.urls]

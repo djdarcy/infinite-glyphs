@@ -1,0 +1,7 @@
+# Core rendering + font baking
+Pillow>=9.0           # PNG rasterization (also used to verify baked fonts)
+fonttools>=4.40       # TTF/OTF baking
+
+# Recommended (optional): clean, consistently-wound font contours.
+# Without it, baked glyphs may render thin in real font rasterizers.
+skia-pathops>=0.7
