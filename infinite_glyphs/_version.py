@@ -25,7 +25,7 @@ PHASE = ""  # Per-MINOR feature set: "" (stable), "alpha", "beta", "rc1", etc.
 PROJECT_PHASE = ""  # "prealpha", "alpha", "beta", "stable", or ""
 
 # Auto-updated by git hooks - do not edit manually
-__version__ = "0.1.0_main_6-20260619-1a77e48a"
+__version__ = "0.1.0_main_7-20260619-0bacb83e"
 __app_name__ = "infinite-glyphs"
 
 

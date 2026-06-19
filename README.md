@@ -1,5 +1,7 @@
 # infinite-glyphs
 
+[![Installs](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/djdarcy/3d01e52bd0fd7a5331324774eb0de9b9/raw/installs.json)](https://djdarcy.github.io/infinite-glyphs/stats/#installs)
+
 Procedural glyphs for **arbitrarily large numeral bases** — so a number written in
 a base like `tri(36) = 666` (which needs 666 distinct single-character digits, far
 beyond decimal or hex) can actually be rendered, typed, and printed.
