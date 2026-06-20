@@ -42,6 +42,10 @@ jobs:
 
   publish:
     needs: build
+    # Gated off until a PyPI trusted publisher is configured. Set repo variable
+    # PYPI_PUBLISH=true to enable publishing on tag push. Until then, tagging a
+    # release builds + checks the package but does not attempt to publish.
+    if: vars.PYPI_PUBLISH == 'true'
     runs-on: ubuntu-latest
     environment: pypi
 
