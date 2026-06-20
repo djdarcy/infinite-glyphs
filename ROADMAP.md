@@ -1,7 +1,6 @@
 # Roadmap
 
-Living roadmap. The authoritative, continuously-updated version is
-[Issue #1](https://github.com/djdarcy/infinite-glyphs/issues) (evergreen).
+Living roadmap. The authoritative, continuously-updated version is [Issue #2](https://github.com/djdarcy/infinite-glyphs/issues/2) (evergreen).
 
 | Phase | Focus | Status |
 |-------|-------|--------|
